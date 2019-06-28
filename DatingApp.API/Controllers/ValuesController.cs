@@ -11,7 +11,7 @@ namespace DatingApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : ControllerBase  // Controller has view support; ControllerBase does not since Angular is being used
     {
         private readonly DataContext _context;
         public ValuesController(DataContext context)
